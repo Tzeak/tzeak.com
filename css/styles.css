@@ -1,0 +1,22 @@
+/*lol styles go here */
+body {
+	margin:40px auto;
+	max-width:640px;
+	line-height:1.6;
+	font-size:18px;
+	color:#444;
+	background-color: #EEE;
+	padding:0 10px
+}
+header{
+	text-align: center;
+	margin: auto;
+	max-width: 640px;
+}
+h1,h2,h3 {
+	line-height:1.2
+}
+#profile_pic {
+	max-width: 300px;
+	border-radius: 150px;
+}
