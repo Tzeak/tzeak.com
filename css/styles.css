@@ -1,22 +1,88 @@
-/*lol styles go here */
+/*Default values*/
+/*The less css the better*/
+.body-container {
+	margin: auto;
+	max-width:640px;
+	min-height: calc(100vh - 120px);
+}
 body {
 	margin:40px auto;
-	max-width:640px;
 	line-height:1.6;
 	font-size:18px;
 	color:#444;
 	background-color: #EEE;
-	padding:0 10px
+	padding:0 0 0 10px;
+}
+h1,h2,h3 {
+	line-height:1.2
+}
+ul{
+	list-style-type:none;
+	padding: 0;
+	margin: 0;
 }
 header{
 	text-align: center;
 	margin: auto;
 	max-width: 640px;
 }
-h1,h2,h3 {
-	line-height:1.2
+footer {
+	max-width: 100%;
+	text-align: center;
+	padding: 0 10px;
 }
+
 #profile_pic {
-	max-width: 300px;
+	width: 40%;
+	max-width: 40vh;
 	border-radius: 150px;
+}
+.headlinks li {
+	display: inline-block;
+	width: 30%;
+}
+.footlinks li {
+	margin: auto;
+	padding: 0.5em;
+	display: inline-block;
+}
+/*stolen from http://codepen.io/thebabydino/pen/hzcwl/ */
+.speech-bubble {
+	float: left;
+	position: relative;
+	margin: .5em 0 -12em 0;
+	padding: .5em;
+	max-width: 20vh;
+	width: 10em; height: 4em;
+	border-radius: .25em;
+	transform: rotate(-15deg) rotateY(15deg);
+	background: #629bdd;
+	font: 1em/4 Century Gothic, Verdana, sans-serif;
+	text-align: center;
+}
+.speech-bubble:before, .speech-bubble:after {
+	position: absolute;
+	z-index: -1;
+	content: '';
+}
+.speech-bubble:after {
+	top: 0; right: 0; bottom: 0; left: 0;
+	border-radius: inherit;
+	transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
+	background: #f4fbfe;
+}
+.speech-bubble:before {
+	border: solid 0 transparent;
+	border-right: solid 3.5em #f4fbfe;
+	border-bottom: solid .25em #629bdd;
+	bottom: .25em; left: 1.25em;
+	width: 0; height: 1em;
+	transform: rotate(45deg) skewX(75deg);
+}
+@media (max-width: 600px)
+{
+	.speech-bubble
+	{
+		display: none;
+	}
 }

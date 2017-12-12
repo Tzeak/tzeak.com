@@ -1,13 +1,32 @@
 <!DOCTYPE html>
+<!-- Don't look at me when i'm not dressed up!-->
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
 		<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 	</head>
 	<body>
-	<header>
-		<img id="profile_pic" src="img/profile.jpg"/>
-		<h2 id="world">hello!</h2>
-	</header>
+	<div class="body-container">
+		<header>
+			<div class="speech-bubble"><h3 id="world">hello!</h3></div>
+			<img id="profile_pic" src="img/profile.jpg" onclick="newGreeting()"/>
+			<ul class="headlinks">
+				<li><a href="https://tzeak.github.io">long things i say</a></li>
+				<li><a href="food/">food</a></li>
+				<li><a href="projects/">projects</a></li>
+			</ul>
+		</header>
+		<p style="text-align: center">Hi I'm Roshan</p>
+		<p>Armchair philosopher living in the Silicon Valley. This is a place where I intend to record my thoughts and present my personal projects. I also do code things sometimes.</p>
+		<p>Currently bumming around the United States and consulting on freelance projects for small businesses. Feel free to send me an email. Or hire me. That's cool too.</p>
+	</div>
+	<footer>
+		<ul class="footlinks">
+			<a href="Roshan Ramankutty | Resume.pdf">Hire Me?</a>
+		</ul>
+	</footer>
 	</body>
+	<script type="text/javascript" src="js/js.js"></script>
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
 </html>
